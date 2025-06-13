@@ -13,11 +13,19 @@ body {
     margin: 20px auto;
     padding: 0 20px;
 }
+
+.responsive-map {
+	width: 100%;
+	height: 300px;
+	border: 0;
+	display: block;
+			}
+
  /* Estilos personalizados para el contenedor del chat */
         .chat-container {
-            max-height: 70vh; /* Altura m·xima para el ·rea de mensajes */
+            max-height: 70vh; /* Altura m√°xima para el √°rea de mensajes */
             overflow-y: auto; /* Habilita el scroll vertical */
-            scroll-behavior: smooth; /* Desplazamiento suave al aÒadir mensajes */
+            scroll-behavior: smooth; /* Desplazamiento suave al a√±adir mensajes */
         }
         /* Ocultar la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
         .chat-container::-webkit-scrollbar {
@@ -50,11 +58,11 @@ header p {
 
 .logo-superior-izquierda {
     position: absolute; /* Permite posicionar el elemento con top, left, etc. */
-    top: 10px;          /* Distancia desde la parte superior de la p·gina */
-    left: 20px;         /* Distancia desde el lado izquierdo de la p·gina */
-    width: 80px;        /* Ancho del logo (ajusta seg˙n necesites) */
-    height: auto;       /* Mantiene la proporciÛn de la imagen */
-    z-index: 1000;      /* Asegura que el logo estÈ por encima de otros elementos */
+    top: 10px;          /* Distancia desde la parte superior de la p√°gina */
+    left: 20px;         /* Distancia desde el lado izquierdo de la p√°gina */
+    width: 80px;        /* Ancho del logo (ajusta seg√∫n necesites) */
+    height: auto;       /* Mantiene la proporci√≥n de la imagen */
+    z-index: 1000;      /* Asegura que el logo est√© por encima de otros elementos */
     border-radius: 50%; /* Opcional: para hacer el logo circular si es cuadrado */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Opcional: una sombra suave */
 }
@@ -228,7 +236,7 @@ nav a:hover {
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: #28a745; /* Color verde para el botÛn de acciÛn */
+    background-color: #28a745; /* Color verde para el bot√≥n de acci√≥n */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -253,14 +261,14 @@ footer {
 
 /* --- Media Queries para Responsividad --- */
 
-/* TelÈfonos pequeÒos a medianos (hasta 768px) */
+/* Tel√©fonos peque√±os a medianos (hasta 768px) */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
     }
 
     .logo-superior-izquierda {
-        width: 60px; /* M·s pequeÒo para pantallas chicas */
+        width: 60px; /* M√°s peque√±o para pantallas chicas */
         top: 15px;
         left: 10px;
     }
@@ -280,7 +288,7 @@ footer {
 
     .operators,
     .testimonials-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeÒas */
+        grid-template-columns: 1fr; /* Una columna en pantallas peque√±as */
     }
 
     .operator-item img {
@@ -296,7 +304,7 @@ footer {
     }
 }
 
-/* TelÈfonos muy pequeÒos (hasta 480px) */
+/* Tel√©fonos muy peque√±os (hasta 480px) */
 @media (max-width: 480px) {
     .container {
         padding: 0 10px;
@@ -311,13 +319,13 @@ footer {
     }
 
     .logo-superior-izquierda {
-        width: 50px; /* A˙n m·s pequeÒo */
+        width: 50px; /* A√∫n m√°s peque√±o */
         top: 10px;
         left: 5px;
     }
 
     nav a {
-        display: block; /* Cada enlace de navegaciÛn en su propia lÌnea */
+        display: block; /* Cada enlace de navegaci√≥n en su propia l√≠nea */
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding: 12px 0;
     }
@@ -354,24 +362,24 @@ footer {
     background-color: #007bff; /* Color de fondo azul */
     color: white;    /* Texto blanco */
     border: none;
-    border-radius: 50%; /* BotÛn circular */
-    width: 60px;     /* Ancho del botÛn */
-    height: 60px;    /* Alto del botÛn */
-    font-size: 1.5em; /* TamaÒo de la fuente */
+    border-radius: 50%; /* Bot√≥n circular */
+    width: 60px;     /* Ancho del bot√≥n */
+    height: 60px;    /* Alto del bot√≥n */
+    font-size: 1.5em; /* Tama√±o de la fuente */
     line-height: 60px; /* Centra el texto verticalmente */
     text-align: center; /* Centra el texto horizontalmente */
     cursor: pointer; /* Muestra una mano al pasar el cursor */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacarlo */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
-    z-index: 1001; /* Asegura que estÈ por encima de casi todo */
+    z-index: 1001; /* Asegura que est√© por encima de casi todo */
 }
 
 .scroll-to-top-btn:hover {
-    background-color: #0056b3; /* Color m·s oscuro al pasar el ratÛn */
-    transform: translateY(-2px); /* PequeÒo efecto de elevaciÛn */
+    background-color: #0056b3; /* Color m√°s oscuro al pasar el rat√≥n */
+    transform: translateY(-2px); /* Peque√±o efecto de elevaci√≥n */
 }
 
-/* Media Queries para responsividad del botÛn */
+/* Media Queries para responsividad del bot√≥n */
 @media (max-width: 768px) {
     .scroll-to-top-btn {
         width: 50px;
@@ -404,7 +412,7 @@ footer {
             margin-bottom: 30px;
         }
 
-        /* Encabezados de secciÛn (Contactanos, Recarga AquÌ, Deja tu OpiniÛn) */
+        /* Encabezados de secci√≥n (Contactanos, Recarga Aqu√≠, Deja tu Opini√≥n) */
         .section-title {
             text-align: center;
             color: #007bff;
@@ -416,16 +424,16 @@ footer {
             font-weight: 700;
         }
 
-        /* Icono para los tÌtulos de secciÛn (usando un pseudo-elemento para el diamante) */
+        /* Icono para los t√≠tulos de secci√≥n (usando un pseudo-elemento para el diamante) */
         .section-title::before {
-            content: '?'; /* Car·cter de diamante */
+            content: '?'; /* Car√°cter de diamante */
             margin-right: 10px;
             font-size: 25px;
             vertical-align: middle;
             color: #007bff;
         }
 
-        /* Estilo para las viÒetas (diamantes) dentro del texto */
+        /* Estilo para las vi√±etas (diamantes) dentro del texto */
         .bullet-point {
             margin-left: 10px;
             position: relative;
@@ -435,7 +443,7 @@ footer {
         }
 
         .bullet-point::before {
-            content: '?'; /* Car·cter de diamante */
+            content: '?'; /* Car√°cter de diamante */
             position: absolute;
             left: 0;
             top: 0;
@@ -443,7 +451,7 @@ footer {
             font-size: 18px;
         }
 
-        /* Estilos especÌficos del formulario */
+        /* Estilos espec√≠ficos del formulario */
         .form-group {
             margin-bottom: 20px;
         }
