@@ -14,12 +14,6 @@ body {
     padding: 0 20px;
 }
 
-.responsive-map {
-			width: 100%;
-			height: 300px;
-			border: 0;
-			display: block;
-			}
 
  /* Estilos personalizados para el contenedor del chat */
         .chat-container {
