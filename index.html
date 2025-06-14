@@ -99,7 +99,32 @@
 
             <button type="submit">Enviar Opinión</button>
         </form>
+		 <div id="mensajeConfirmacion" style="display:none; margin-top: 10px; color: green;"></div>
     </div>
+		  <script>
+        // Obtener el formulario y el botón de enviar
+        const opinionForm = document.getElementById('opinionForm');
+        const mensajeConfirmacion = document.getElementById('mensajeConfirmacion');
+
+        // Añadir un "event listener" al formulario para cuando se envíe
+        opinionForm.addEventListener('submit', function(event) {
+            // Prevenir el comportamiento por defecto del formulario (que recargue la página)
+            event.preventDefault();
+
+            // Mostrar el mensaje
+            mensajeConfirmacion.textContent = "Tu opinión será tomada en cuenta para un mejor servicio";
+            mensajeConfirmacion.style.display = "block"; // Hacer visible el mensaje
+
+            // Opcional: Limpiar el formulario después de enviar
+            opinionForm.reset();
+
+            // Opcional: Ocultar el mensaje después de unos segundos (ej. 3 segundos)
+            setTimeout(() => {
+                mensajeConfirmacion.style.display = "none";
+                mensajeConfirmacion.textContent = ""; // Limpiar el texto también
+            }, 3000); // 6000 milisegundos = 6 segundos
+        });
+    </script>
         </section>
 
         <section id="contacto" class="section">
