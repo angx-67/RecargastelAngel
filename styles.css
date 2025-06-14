@@ -256,11 +256,28 @@ footer {
 /* --- Media Queries para Responsividad --- */
 
 /* Teléfonos pequeños a medianos (hasta 768px) */
-@media (max-width: 768px) {
     header h1 {
         font-size: 2em;
     }
-
+	@media (max-width: 768px) {
+	 header {
+        background-color: #ffc107; /* Amarillo para el header en pantallas pequeñas */
+    }
+    nav {
+        background-color: #e0a800; /* Un amarillo más oscuro para el nav */
+    }
+}
+   @media screen and (max-height: 500px) {
+    header {
+        background-color: #dc3545; /* Rojo para el header en pantallas cortas */
+    }
+    nav {
+        background-color: #c82333; /* Un rojo más oscuro para el nav */
+    }
+}
+ header h1 {
+        font-size: 2em;
+    }
     .logo-superior-izquierda {
         width: 60px; /* Más pequeño para pantallas chicas */
         top: 15px;
