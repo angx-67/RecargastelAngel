@@ -81,27 +81,22 @@
         <h2>Déjanos tu Opinión</h2>
 
     
-        <form action="#testimonios" method="POST">
-            <div class="form-group">
-                <label for="nombre">Tu Nombre (opcional):</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez">
-            </div>
+            <form id="opinionForm">
+            <label for="nombre">Tu Nombre (opcional):</label>
+            <input type="text" id="nombre" name="nombre" >
 
-            <div class="form-group">
-                <label for="email">Tu Correo Electrónico (opcional):</label>
-                <input type="email" id="email" name="email" placeholder="Ej: tu.email@ejemplo.com">
-            </div>
+            <label for="email">Tu Correo Electrónico (opcional):</label>
+            <input type="email" id="email" name="email" >
 
-            <div class="form-group">
-                <label for="opinion">Tu Opinión o Comentario:</label>
-                <textarea id="opinion" name="opinion" rows="7" placeholder="Escribe aquí tu opinión..." required></textarea>
-            </div>
+            <label for="opinion">Tu Opinión o Comentario:</label>
+            <textarea id="opinion" name="opinion"></textarea>
 
-            <button type="submit">Enviar Opinión</button>
+            <button type="submit" id="sendOpinionBtn">Enviar Opinión</button>
+		
+        </div>
+		<div id="mensajeConfirmacion" style="display:none; margin-top: 10px; color: green;"></div>
         </form>
-		 <div id="mensajeConfirmacion" style="display:none; margin-top: 10px; color: green;"></div>
-    </div>
-		  <script>
+  <script>
         // Obtener el formulario y el botón de enviar
         const opinionForm = document.getElementById('opinionForm');
         const mensajeConfirmacion = document.getElementById('mensajeConfirmacion');
@@ -125,6 +120,9 @@
             }, 3000); // 6000 milisegundos = 6 segundos
         });
     </script>
+
+        
+
         </section>
 
         <section id="contacto" class="section">
@@ -134,12 +132,14 @@
             <ul>
                 <li>Teléfono:  <a href="tel:+522321541656">+52 232 154 1656 </a></li>
                 <li>Correo Electrónico:<a href="mailto:angelyerrayxd@gmail.com">angelyerrayxd@gmail.com</a></li>
-                <li>Dirección: <div class="mapa">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1873.987975803636!2d-97.059784!3d20.05145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db03afbc2f80f3%3A0xdc2e5b84433f314f!2zSW5nZW5pZXLDrWEsIENvbXB1dGFjacOzbiwgSW5mb3Jtw6F0aWNh!5e0!3m2!1ses!2smx!4v1749791682484!5m2!1ses!2smx" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <li>Ubicación: <div class="mapa">
+<iframe src="https://www.google.com/maps/embed?pb=!4v1749793612305!6m8!1m7!1sjP34JTOQWA_r3yxe92nk2g!2m2!1d20.05169103841489!2d-97.05956536587092!3f328.80506870321557!4f-5.794163798873015!5f0.7820865974627469" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 				<p>¡Esperamos tu mensaje!</p>
         </section>
-
+				</li>
+				
+				
 	<section id="recargaaqui" class="section">
             <h2>¡Recarga Aquí!</h2>
             <p>Selecciona tu compañía y el monto de recarga.</p>
@@ -195,7 +195,10 @@
     </button>
 
 	 <script>
-        // Obtener el formulario por su ID
+	 
+	 <script>
+		
+	         // Obtener el formulario por su ID
         const rechargeForm = document.getElementById('rechargeForm');
 
         // Agregar un "event listener" para el evento 'submit' (enviar) del formulario
